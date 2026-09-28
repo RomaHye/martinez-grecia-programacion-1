@@ -64,3 +64,14 @@ git add .
 git commit -m "Descripción de los cambios"
 git push
 ```
+## Proyecto de Scratch
+
+Como parte de las prácticas de la materia se realizó un juego en Scratch en el que el personaje debe recolectar ramyons para avanzar a través de tres niveles.
+
+**Proyecto en Scratch:** https://scratch.mit.edu/projects/1377089917/
+
+Una parte de la lógica del proyecto fue traducida a Python utilizando variables, condicionales y ciclos.
+
+El código traducido se encuentra en:
+
+`practicas/scratch_ramyons.py`
