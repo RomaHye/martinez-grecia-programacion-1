@@ -4,7 +4,6 @@
 
 **Nombre:** Grecia Martinez  
 **Curso:** Programación 1  
-**Grupo:** [ESCRIBE AQUÍ TU GRUPO]
 
 ## Propósito del repositorio
 
