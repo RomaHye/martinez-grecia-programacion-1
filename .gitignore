@@ -1,0 +1,15 @@
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Entornos virtuales
+venv/
+.venv/
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos temporales de Windows
+Thumbs.db
+Desktop.ini
