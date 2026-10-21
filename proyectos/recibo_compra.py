@@ -12,13 +12,13 @@ def calcular_recibo():
         # Condición de salida
         if nombre.lower() == 'salir':
             if not productos:
-                print("⚠️ No se han registrado productos. ¡Programa finalizado!")
+                print(" No se han registrado productos. ¡Programa finalizado!")
                 return
             break
         
         # Validación de que el nombre no esté vacío
         if not nombre:
-            print("⚠️ El nombre del producto no puede estar vacío. Intente de nuevo.")
+            print(" El nombre del producto no puede estar vacío. Intente de nuevo.")
             continue
         
         # Validación del precio (conversión de tipos y manejo de errores)
@@ -26,22 +26,22 @@ def calcular_recibo():
             try:
                 precio = float(input(f"Ingrese el precio unitario de '{nombre}': $"))
                 if precio <= 0:
-                    print("⚠️ El precio debe ser mayor a cero.")
+                    print(" El precio debe ser mayor a cero.")
                     continue
                 break
             except ValueError:
-                print("⚠️ Entrada inválida. Por favor, ingrese un número válido para el precio.")
+                print(" Entrada inválida. Por favor, ingrese un número válido para el precio.")
         
         # Validación de la cantidad
         while True:
             try:
                 cantidad = int(input(f"Ingrese la cantidad de '{nombre}': "))
                 if cantidad <= 0:
-                    print("⚠️ La cantidad debe ser un número entero mayor a cero.")
+                    print(" La cantidad debe ser un número entero mayor a cero.")
                     continue
                 break
             except ValueError:
-                print("⚠️ Entrada inválida. Por favor, ingrese un número entero válido.")
+                print(" Entrada inválida. Por favor, ingrese un número entero válido.")
         
         # Cálculo del subtotal del producto usando operadores aritméticos
         subtotal_producto = precio * cantidad
@@ -54,7 +54,7 @@ def calcular_recibo():
             "subtotal": subtotal_producto
         })
         
-        print(f"✅ ¡Producto agregado! Subtotal: ${subtotal_producto:.2f}")
+        print(f" ¡Producto agregado! Subtotal: ${subtotal_producto:.2f}")
 
     # Cálculos finales de la compra
     subtotal_general = sum(p["subtotal"] for p in productos)
